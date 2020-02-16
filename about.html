@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<!--animation scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+<script src="gsap/js/libs/gsap/TweenMax.min.js"></script>
+<script src="gsap/js/libs/gsap/TimelineMax.min.js"></script>
+<!--overlay and logo animation script on click-->
+<script type="text/javascript">
+    TweenMax.to(".overlay img", 2, {
+        opacity:0,
+        y: -60,
+        ease: Expo.easeInOut
+    })
+    TweenMax.to(".overlay", 2, {
+        delay: 1,
+        top: "-100%",
+        ease: Expo.easeInOut
+    })
+</script>
+</html>

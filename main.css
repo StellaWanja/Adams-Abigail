@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.landing_pg{
+    background-image: url("images/woman-wearing-brown-fur-beanies-and-white-and-balck-top-2681751.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+#logo{
+    font-weight: bolder;
+    color: #ffffff;
+    padding-left: 50px;
+}
+#nav li{
+    font-weight: bolder;
+    letter-spacing: 5px;
+    padding: 20px;
+}
+#nav li a:hover{
+    border-bottom: 2px solid #cccccc;
+}
+.social-media ul{
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    transform: translate(-50%);
+}
+.social-media ul li{
+    list-style-type: none;
+    padding-top: 20px;
+}
+.social-media ul li a{
+    color: #ffffff;
+}
+.social-media ul li a:hover{
+    color: #cccccc;
+}
+.header{
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    color: #ffffff;
+    font-family: "Droid Serif", Serif;
+    text-align: center;
+}
+.header p{
+    letter-spacing: 5px;
+}
+#button{
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#button:hover{
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/*first overlay effect*/
+.overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    top: 0%;
+}
+
