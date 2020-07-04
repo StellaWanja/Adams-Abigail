@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
 }
+#fullpage{
+    overflow: hidden;
+}
 .landing_pg{
     background-image: url("images/woman-wearing-brown-fur-beanies-and-white-and-balck-top-2681751.jpg");
     background-size: cover;
@@ -20,13 +23,15 @@ body{
     padding: 20px;
 }
 #nav li a:hover{
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #ffffff;
+}
+#nav li a:active{
+    border-bottom: 2px solid #ffffff;
 }
 .social-media ul{
     position: absolute;
-    top: 40%;
-    right: 3%;
-    transform: translate(-50%);
+    top: 45%;
+    right: 5%;
 }
 .social-media ul li{
     list-style-type: none;
@@ -74,4 +79,101 @@ body{
     background-color: #ffffff;
     top: 0%;
 }
+.overlay h2{
+    font-family: sans-serif, Arial, "Helvetica Neue";
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 20%;
+    color: #000000;
+}
 
+/*responsive*/
+@media(max-width: 768px){
+    .overlay h2{
+        margin-top: 75%;
+    }
+    .header{
+        top: 60%;
+        margin-left: 20px;
+    }
+    .header h1{
+        font-size: 28px;
+    }
+    .header p{
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+
+/*products_section*/
+#products_section h1{
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.product_overlay{
+    display: block;
+    position: absolute;
+    top: 10%;
+    width: 70px;
+    opacity: 0;
+}
+.img_overlay:hover .product_overlay{
+    opacity: 1;
+    transition: 0.5s;
+    margin-left: 5%;
+}
+.product_overlay .fa{
+    background-color: white;
+    color: black;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin: 5%;
+}
+.product_overlay .fa:hover{
+    background-color: #f5f9ec;
+}
+
+
+/*footer*/
+#footer{
+    padding: 50px 50px 10px 50px;
+    margin-top: 50px;
+    background-color: #000000;
+    border-top: solid 1px #333333;
+}
+#footer h5{
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#footer ul a{
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    text-align: left;
+    padding: 5px;
+}
+#footer li{
+    list-style-type: none;
+}
+#footer a:hover{
+    text-decoration: none;
+    color: #bec2b5;
+}
+#footer p{
+    color: #ffffff;
+    text-align: justify;
+}
+#footer .last{
+    text-align: center;
+}
+#footer #form{
+    padding-bottom: 20px;
+    padding-left: 30%;
+}
